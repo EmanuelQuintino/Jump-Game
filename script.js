@@ -1,9 +1,12 @@
+// Corrigir bug de Entrada
+
 // >>>>>>>>>>>>  DOM <<<<<<<<<<<
 
 const avatarJump = document.querySelector(".avatar-run") 
 const enemyRun = document.querySelector('.enemy-run') 
 const scoreDOM = document.querySelector("#score")
 const countdownDOM = document.querySelector('#countdown')
+
 
 // >>>>>>>>>>>>  Select ALL <<<<<<<<<<<
 
