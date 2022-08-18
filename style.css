@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: black;
+}
+
+header {
+    flex: 2;
+    /* background-color: lightgray; */
+}
+
+main {
+    flex: 4;
+    background-color: lightcoral;
+}
+
+.text {
+    font-size: 2rem;
+    z-index: 2;
+    text-shadow: .07rem .07rem .2rem black;
+    display: flex;
+    align-items: center;
+}
+
+#titulo-game {
+    color: white;
+    position: relative;
+    font-size: 4rem;
+    padding: 5rem;
+}
+
+#score {
+    font-size: 1.5rem;
+    font: bolder;
+    z-index: 1;
+    margin: 1rem 1rem 1rem 28rem;
+    color: white;
+    position: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#countdown {
+    position: fixed;
+    color: yellow;
+    font-size: 3.5rem;
+    top: 25rem;
+}
+
+aside {
+    flex: 1;
+    /* background-color: lightsalmon; */
+    color: white;
+    font-size: 1rem;
+}
+
+footer {
+    flex: 1;
+    /* background-color: lightskyblue; */
+    color: white;
+    font-size: 1rem;
+}
+
+.background {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    
+}
+
+.game-board {
+    width: 40rem;
+    height: 23.2rem;
+    /* border: .1rem solid; */
+    
+    /*Centralizar*/
+    margin: 0 auto;
+    /* margin-top: 10rem;  */
+    
+    position: relative;
+
+    /* Cor do céu */
+    /* background: linear-gradient(#87CEEB, #E0F6FF); */
+
+    /* background-image: url('imagens/background-mario1.gif'); */
+    
+    /*Esconde tudo que não está na tela*/
+    overflow: hidden;    
+}
+
+.avatar-run {
+    position: absolute;
+    width: 5rem;
+    bottom: 1rem;
+    left: 3rem;
+    z-index: 1;
+
+    /* teste para pegar o valor absoluto do jump do Megaman */
+    /* bottom: 7rem; */
+    /* Usar console.log no JS */
+    
+}
+
+#sonic {
+    width: 4.5rem;
+}
+
+#mario {
+    width: 4.5rem;
+}
+
+#mario3 {
+    width: 7rem;
+    bottom: 1rem;
+}
+
+#dixie{
+    width: 6rem;
+}
+
+#megaman{
+    width: 5rem;
+}
+
+#zero {
+    width: 6rem;
+}
+
+#pikachu {
+    width: 5.5rem;
+    bottom: 1rem;
+}
+
+#pikachu3 {
+    width: 6rem;
+}
+
+#alucard {
+    width: 4rem;
+}
+
+#spider-man {
+    width: 6rem;
+}
+
+#funky {
+    width: 8rem;
+}
+
+#crash {
+    width: 6rem;
+    bottom: 1.2rem;
+}
+
+.jump {
+    animation: jump 700ms ease-in-out;
+}
+
+.enemy-run {
+    position: absolute;
+    width: 9rem;
+    bottom: .1rem;
+    
+    
+    /* animation: enemy-animation 1.5s infinite linear; */
+    animation: enemy-animation;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-delay: 4s; */
+    
+    /* teste para pegar o valor absoluto da posição de enemy */
+    
+    /* antes de bater 34px*/
+    /* left:  2.1rem; */
+    
+    /* depois de passar -80px*/
+    /* left: -5rem; */
+    
+    /* Usar console.log no JS */
+}
+
+#robot-0 {
+    width: 9rem;
+}
+
+#robot-1 {
+    width: 9rem;
+    bottom: 1rem;
+}
+
+#robot-2 {
+    width: 9rem;
+}
+
+#dragon-0 {
+    width: 14rem;
+    bottom: .5rem;
+}
+
+#dragon-1 {
+    width: 15rem;
+    bottom:  1rem;
+}
+
+#dragon-2, #dragon-3 {
+    width: 9rem;
+    bottom: 2rem;  
+}
+
+#articuno {
+    width: 13rem;
+    bottom: 1rem;
+}
+
+#moltres {
+    width: 14rem;
+    bottom: -1rem;
+}
+
+#zapdos {
+    width: 13rem;
+    bottom: 2rem;
+}
+
+#charizard {
+    width: 10rem;
+    bottom: 2rem;
+}
+
+#dragonite {
+    width: 6rem;
+    bottom: 2rem;
+}
+
+#lugia {
+    width: 11rem;
+    bottom: 1rem;
+}
+
+#klasp {
+    width: 9rem;
+    bottom: 1rem;
+}
+
+#klobber {
+    width: 4rem;
+    bottom: .5rem;
+}
+
+
+
+@keyframes enemy-animation {
+    from {
+        right: -10rem;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 1.1rem;
+    }
+
+    45% {
+        bottom: 9.5rem;
+    }
+    50% {
+        bottom: 10rem;
+    }
+
+    55% {
+        bottom: 9.5rem;
+    }
+
+    100% {
+        bottom: 1.1rem;
+    }
+}
+
+
+
+
