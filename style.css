@@ -60,9 +60,22 @@ main {
 
 aside {
     flex: 1;
-    /* background-color: lightsalmon; */
+    flex-direction: column;
     color: white;
     font-size: 1rem;
+    margin-top: 2rem;
+    transition: 200ms;
+}
+
+button {
+    background: none;
+    color: white;
+    font-size: 2rem;
+}
+
+aside button:hover {
+    color: yellow;
+    cursor: pointer;
 }
 
 footer {
