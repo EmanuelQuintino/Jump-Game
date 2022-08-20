@@ -19,9 +19,8 @@ let avatarList = [
     {index: 5, name: 'alucard', jump: ''},
     {index: 6, name: 'funky', jump: ''},
     {index: 7, name: 'link', jump: ''},
-    {index: 8, name: 'spider-man', jump: ''},
-    {index: 9, name:'sonic', jump: ''},
-    {index: 10, name:'crash', jump: ''},
+    {index: 8, name:'sonic', jump: ''},
+    {index: 9, name:'crash', jump: ''},
 ] 
 
 let enemyList = [
@@ -35,7 +34,6 @@ let enemyList = [
     {index: 7, name:'charizard', speed: '1500ms', score: 270},
     {index: 8, name:'dragonite', speed: '1500ms', score: 280},
     {index: 9, name:'articuno', speed: '1500ms', score: 290},
-    {index: 10, name:'moltres', speed: '1500ms', score: 290},
     {index: 11, name:'zapdos', speed: '1500ms', score: 290},
     {index: 12, name:'lugia', speed: '1500ms', score: 300},
     {index: 13, name:'klobber', speed: '1500ms', score: 200},
@@ -43,14 +41,14 @@ let enemyList = [
 ]
 
 //selecionar avatar
-const avatarName = avatarList[3].name
+const avatarName = avatarList[8].name
 
 avatarJump.id = avatarName
 avatarJump.src = `imagens/${avatarName}-run.gif`
 
 //desativa imagem e animação do inimigo para contagem inicial
-enemyRun.style.animation = 'none'
-enemyRun.style.display = 'none'
+// enemyRun.style.animation = 'none'
+// enemyRun.style.display = 'none'
 
 
 // >>>>>>>>>>>>  FUNCTIONS <<<<<<<<<<<
@@ -60,29 +58,29 @@ enemyRun.style.display = 'none'
 
 
 
-let count = 1
-// contagem regressiva até começar o jogo
-const countdown = setInterval(function(){
+// let count = 1
+// // contagem regressiva até começar o jogo
+// const countdown = setInterval(function(){
     
-    if (count < 4) {
-        countdownDOM.innerHTML = count
-    }
+//     if (count < 4) {
+//         countdownDOM.innerHTML = count
+//     }
     
-    else if (count === 4) {
-        countdownDOM.innerHTML = 'GO!'
-    }
-    else if (count === 5) {
+//     else if (count === 4) {
+//         countdownDOM.innerHTML = 'GO!'
+//     }
+//     else if (count === 5) {
         
-        countdownDOM.style.display = "none"
-        enemyRun.style.animation = ''
-        enemyRun.style.display = 'flex'
+//         countdownDOM.style.display = "none"
+//         enemyRun.style.animation = ''
+//         enemyRun.style.display = 'flex'
 
-        clearInterval(countdown)
-    }    
+//         clearInterval(countdown)
+//     }    
 
-    count++
+//     count++
 
-}, 1000)
+// }, 1000)
  
 
 // >>>  Função Enemy Random <<<
@@ -152,7 +150,7 @@ const loop = setInterval(() => {
 
 
     // condição de parada do enemy os valores absolutos (depois de passar), (antes de bater) e 112(altura do pulo) foram encontrados no teste
-    if (enemyPosition > -10 && enemyPosition <= 70 && avatarPositionJump < 110){
+    if (enemyPosition > -20 && enemyPosition <= 40 && avatarPositionJump < 110){
     
         // valor dinâmico de parada em píxels 
         

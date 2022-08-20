@@ -171,6 +171,7 @@ footer {
     position: absolute;
     width: 9rem;
     bottom: .1rem;
+    right: 100%;
     
     
     /* animation: enemy-animation 1.5s infinite linear; */
@@ -263,7 +264,7 @@ footer {
 
 @keyframes enemy-animation {
     from {
-        right: -10rem;
+        right: -15rem;
     }
 
     to {
