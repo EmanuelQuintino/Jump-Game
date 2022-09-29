@@ -19,7 +19,7 @@ header {
 
 main {
     flex: 4;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 
 .text {

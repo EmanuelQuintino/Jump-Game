@@ -41,7 +41,7 @@ let enemyList = [
 ]
 
 //selecionar avatar
-const avatarName = avatarList[8].name
+const avatarName = avatarList[9].name
 
 avatarJump.id = avatarName
 avatarJump.src = `imagens/${avatarName}-run.gif`
