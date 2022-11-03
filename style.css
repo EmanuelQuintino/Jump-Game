@@ -41,7 +41,7 @@ main {
     font-size: 1.5rem;
     font: bolder;
     z-index: 1;
-    margin: 1rem 1rem 1rem 28rem;
+    margin: .1rem 1rem 1rem 28rem;
     color: white;
     position: fixed;
 }
@@ -55,7 +55,7 @@ main {
     position: fixed;
     color: yellow;
     font-size: 3.5rem;
-    top: 25rem;
+    top: 20rem;
 }
 
 aside {
@@ -88,8 +88,7 @@ footer {
 .background {
     margin: 0 auto;
     height: 100%;
-    width: auto;
-    
+    width: 100%;
 }
 
 .game-board {
@@ -109,7 +108,7 @@ footer {
     /* background-image: url('imagens/background-mario1.gif'); */
     
     /*Esconde tudo que não está na tela*/
-    overflow: hidden;    
+    overflow: hidden;  
 }
 
 .avatar-run {

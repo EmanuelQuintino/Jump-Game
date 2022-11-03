@@ -6,6 +6,12 @@ const avatarJump = document.querySelector(".avatar-run")
 const enemyRun = document.querySelector('.enemy-run') 
 const scoreDOM = document.querySelector("#score")
 const countdownDOM = document.querySelector('#countdown')
+const btnStart = document.querySelector('#btnStart')
+
+
+btnStart.addEventListener("click", function() {
+    location.reload();
+});
 
 
 // >>>>>>>>>>>>  Select ALL <<<<<<<<<<<
@@ -41,7 +47,7 @@ let enemyList = [
 ]
 
 //selecionar avatar
-const avatarName = avatarList[9].name
+const avatarName = avatarList[8].name
 
 avatarJump.id = avatarName
 avatarJump.src = `imagens/${avatarName}-run.gif`
